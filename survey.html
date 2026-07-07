@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Khảo sát học phần (Clean Structure)</title>
+</head>
+<body>
+    <!-- THÔNG BÁO SỐ PHIẾU -->
+    <div id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbFirstText">
+        <h4>Phiếu đánh giá học phần</h4>
+        <p><strong>Bạn đang có 15 phiếu đánh giá lớp đã học trong học kỳ.</strong></p>
+    </div>
+
+    <!-- FORM KHẢO SÁT -->
+    <form id="aspnetForm">
+        
+        <!-- CÂU HỎI TRẮC NGHIỆM (Ví dụ: ID RBL_316) -->
+        <div id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_0">
+            <!-- Các input ẩn chứa đáp án (cần class dxKBSI và id chứa _RBL_..._I để extension hoạt động) -->
+            <input type="text" class="dxKBSI" id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_RBL_316_RB0_I">
+            <input type="text" class="dxKBSI" id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_RBL_316_RB1_I">
+            <input type="text" class="dxKBSI" id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_RBL_316_RB2_I">
+            <input type="text" class="dxKBSI" id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_RBL_316_RB3_I">
+            <input type="text" class="dxKBSI" id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_RBL_316_RB4_I">
+        </div>
+
+        <!-- CÁC CÂU HỎI TRẮC NGHIỆM KHÁC (Tương tự như trên, thay đổi ID) -->
+        <!-- ... -->
+
+        <!-- CÂU HỎI TỰ LUẬN (TEXTAREA) -->
+        <div id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_13">
+            <textarea id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_mm_329_I"></textarea>
+        </div>
+
+        <!-- NÚT GỬI KHẢO SÁT -->
+        <div id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_14">
+            <input type="submit" id="ctl00_ctl00_contentPane_MainPanel_MainContent_formLayout_submitButton_I" value="gửi khảo sát">
+        </div>
+        
+    </form>
+</body>
+</html>
